@@ -12,9 +12,6 @@
     "start": "NODE_PATH=. NODE_ENV=production node index.js"
   },
   "dependencies": {
-    "date-fns": "^2.15.0",
-    "discord-command-parser": "^1.4.3",
-    "discord.js": "^12.2.0",
     "download": "^8.0.0",
     "instagram-private-api": "^1.41.0",
     "lodash": "^4.17.19",
