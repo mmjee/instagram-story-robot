@@ -1,0 +1,19 @@
+# Where the next timer timestamp is saved, so that the timestamp is preserved across reboots
+TimestampFile = 'next_execution_timestamp'
+
+# Where the stories are saved
+BaseFolder = '/home/user/instagram_stories/'
+# For now there are two formats,
+# 1 puts the year & month first, that is, the typical folder structure past base is 2021-3/2/example/storyid.jpg
+# 2 puts the account first, that is, the typical folder structure past base is example/2021-3/2/storyid.jpg
+FolderFormat = 1
+
+
+# Fairly obvious
+[Instagram]
+Username = 'Username'
+Password = 'Password'
+
+[Targets]
+# Usernames of targets
+targets = ['foo', 'bar', 'baz']

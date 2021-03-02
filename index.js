@@ -1,0 +1,1 @@
+require('isr/main')
