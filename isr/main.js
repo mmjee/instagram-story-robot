@@ -59,14 +59,14 @@ async function main () {
     return
   }
   const time1 = Date.now()
-  console.info('Time now:', time1)
+  // console.info('Time now:', time1)
   let nextTick = (await fs.readFile(configFilePath)).readDoubleLE()
-  console.info('Next tick read:', nextTick)
+  // console.info('Next tick read:', nextTick)
   const offset = time1 - Date.now()
-  console.info('Time that needs to be corrected:', offset)
+  // console.info('Time that needs to be corrected:', offset)
   nextTick = nextTick + offset
   const timeRemaining = nextTick - Date.now()
-  console.info('Time remaining till next tick:', timeRemaining)
+  // console.info('Time remaining till next tick:', timeRemaining)
 
   setTimeout(() => executeScrape(nextTick), timeRemaining)
 }
