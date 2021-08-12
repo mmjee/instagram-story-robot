@@ -1,12 +1,11 @@
 {
   "name": "instagram-story-robot",
-  "version": "rolling",
+  "version": "1.0.0",
   "description": "IG story-robot",
   "main": "index.js",
-  "repository": "https://github.com/the1337guy/instagram-story-robot.git",
-  "author": "me",
+  "repository": "https://github.com/mmjee/instagram-story-robot.git",
   "license": "GPL-3.0-or-later",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "NODE_PATH=. nodemon -e js,toml -- --inspect=127.0.0.1:9251 index.js",
     "start": "NODE_PATH=. NODE_ENV=production node index.js"

@@ -1,0 +1,21 @@
+version: "2"
+
+services:
+  backend:
+    build: .
+    volumes:
+      - ./config.toml:/app/config.toml
+    # NOTE: To add IPv6 support, you need to statically assign an IP address to frontend and delegate a IPv6 prefix to the internal network
+    # networks:
+    #      default:
+    #        ipv6_address: IPV6_ADDRESS_FROM_THE_DELEGATION
+
+#networks:
+#  default:
+#    enable_ipv6: true
+#    driver: bridge
+#    ipam:
+#      driver: default
+#      config:
+#        - subnet: YOUR_IPV6_DELEGATION/120
+#          gateway: GATEWAY_ADDRESS_TYPICALLY_FIRST_ADDRESS_OF_THE_DELEGATION

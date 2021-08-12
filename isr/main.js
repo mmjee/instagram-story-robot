@@ -75,13 +75,8 @@ async function main () {
     await executeScrape(Date.now())
     return
   }
-  const time1 = Date.now()
-  // console.info('Time now:', time1)
-  let nextTick = (await fs.readFile(configFilePath)).readDoubleLE()
-  // console.info('Next tick read:', nextTick)
-  const offset = time1 - Date.now()
-  // console.info('Time that needs to be corrected:', offset)
-  nextTick = nextTick + offset
+
+  const nextTick = (await fs.readFile(configFilePath)).readDoubleLE()
   const timeRemaining = nextTick - Date.now()
   // console.info('Time remaining till next tick:', timeRemaining)
 
