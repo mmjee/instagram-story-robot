@@ -7,4 +7,5 @@ COPY yarn.lock ./
 COPY isr ./isr
 
 RUN yarn install
+ENV NODE_PATH=.
 CMD ["node", "isr/main.js"]
