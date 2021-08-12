@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "download": "^8.0.0",
-    "instagram-private-api": "^1.45.1",
+    "instagram-private-api": "git+https://github.com/alecshoppe/instagram-private-api.git#40606bda564161a81a0637527cbf3ad7048b7473",
     "lodash": "^4.17.21",
     "mkdirp": "^1.0.4",
     "toml": "^3.0.0",
