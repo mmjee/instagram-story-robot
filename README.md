@@ -12,16 +12,23 @@ Do **NOT** ask me this...
 ## How
 
 ```shell
-git clone --depth 1 https://github.com/the1337guy/instagram-story-robot.git
+git clone --depth 1 https://github.com/mmjee/instagram-story-robot.git
 yarn install
 cp config.example.toml config.toml
 $EDITOR config.toml
 yarn run start
 ```
 
+```shell
+git clone --depth 1 https://github.com/mmjee/instagram-story-robot.git
+cp config.example.toml config.toml
+$EDITOR config.toml
+$EDITOR docker-compose.yml
+docker-compose up -d
+```
+
 ## TODO
 
 Maybe send me a PR for this:
 
-1. Dockerize this
-2. Maybe a Discord bot to send notifications when the data is scraped.
+1. Make a Discord bot to send notifications when the data is scraped.
